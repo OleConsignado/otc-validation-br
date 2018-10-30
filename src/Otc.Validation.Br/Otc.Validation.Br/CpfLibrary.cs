@@ -1,12 +1,14 @@
-﻿using Otc.ComponentModel.DataAnnotations;
-using System;
+﻿using System;
 
-namespace Otc.Validation.Br
+namespace Otc.Validation.Br.Library
 {
-    public class CpfAttribute : ValidationAttribute
+    public class CpfLibrary 
     {
-        public override bool IsValid(object value)
+        public static bool Valida(object value)
         {
+            if (value == null)
+                return false;
+
             var iCpf = (string)value;
 
             string cpf = Convert.ToString(iCpf);

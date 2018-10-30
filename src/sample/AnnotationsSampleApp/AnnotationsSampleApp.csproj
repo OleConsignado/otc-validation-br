@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Otc.Validation.Br\Otc.Validation.Br\Otc.Validation.Br.csproj" />
+    <ProjectReference Include="..\..\Otc.Validation.Br\Otc.ComponentModel.Annotations.Extend\Otc.Validation.Br.Extend.csproj" />
   </ItemGroup>
 
 </Project>

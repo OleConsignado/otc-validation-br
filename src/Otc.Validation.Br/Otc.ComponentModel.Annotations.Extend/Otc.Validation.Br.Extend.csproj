@@ -8,4 +8,8 @@
     <PackageReference Include="Otc.ComponentModel.Annotations" Version="1.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Otc.Validation.Br\Otc.Validation.Br.Library.csproj" />
+  </ItemGroup>
+
 </Project>
