@@ -1,7 +1,5 @@
-﻿using Otc.Validation.Br;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
+using Otc.Validation.Br.Extend;
 
 namespace AnnotationsSampleApp
 {
