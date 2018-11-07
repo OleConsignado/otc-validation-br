@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Otc.Validation.Br.Extend
+namespace Otc.Validations.Br.Annotations
 {
     public class CpfAttribute : ValidationAttribute
     {

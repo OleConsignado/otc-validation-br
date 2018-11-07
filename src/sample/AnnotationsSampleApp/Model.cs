@@ -1,5 +1,5 @@
 ﻿
-using Otc.Validation.Br.Extend;
+using Otc.Validations.Br.Annotations;
 
 namespace AnnotationsSampleApp
 {
