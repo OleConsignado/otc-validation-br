@@ -6,6 +6,9 @@ namespace Otc.Validation.Br.Library
     {
         public static bool IsValid(string value)
         {
+            if (string.IsNullOrWhiteSpace(value))
+                return false;
+
             var iCpf = value;
 
             string cpf = Convert.ToString(iCpf);
