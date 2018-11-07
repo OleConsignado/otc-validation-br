@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using Xunit;
 
-namespace Otc.Validation.Br.Test
+namespace Otc.Validation.Br.Tests
 {
     public class CpfTest
     {
