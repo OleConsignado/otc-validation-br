@@ -1,8 +1,6 @@
 ﻿using Otc.ComponentModel.DataAnnotations;
 using Otc.Validation.Br.Library;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Otc.Validations.Br.Annotations
 {
@@ -10,10 +8,19 @@ namespace Otc.Validations.Br.Annotations
     {
         public override bool IsValid(object value)
         {
-            var cpf = (String)value;
-            bool resultado = true;
-            resultado = CpfLibrary.Valida(cpf);
-            return resultado;
+            bool result;
+            int parsedValue = Convert.ToInt32(value);
+
+            if (parsedValue > 0)
+            {
+                result = CpfValidation.IsValid(parsedValue);
+            }
+            else
+            {
+                result = CpfValidation.IsValid(value as string);
+            }
+
+            return result;
         }
     }
 }

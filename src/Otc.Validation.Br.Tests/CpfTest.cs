@@ -11,7 +11,7 @@ namespace Otc.Validation.Br.Tests
         [MemberData(nameof(Data))]
         public void Invalidos(string cpf)
         {
-            Assert.False(CpfLibrary.Valida(cpf));
+            Assert.False(CpfValidation.IsValid(cpf));
         }
 
         public static IEnumerable<object[]> Data =>
