@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otc.Validation.Br.Library", "Otc.Validation.Br\Otc.Validation.Br.Library.csproj", "{42E00A6C-F743-4EAC-9847-0B400F8A7F4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otc.Validations.Br", "Otc.Validations.Br\Otc.Validations.Br.csproj", "{42E00A6C-F743-4EAC-9847-0B400F8A7F4B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otc.Validations.Br.Annotations", "Otc.ComponentModel.Annotations\Otc.Validations.Br.Annotations.csproj", "{B31626F9-AD39-4700-8BEF-BED014D99587}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otc.Validations.Br.Annotations", "Otc.Validations.Br.Annotations\Otc.Validations.Br.Annotations.csproj", "{B31626F9-AD39-4700-8BEF-BED014D99587}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnnotationsSampleApp", "sample\AnnotationsSampleApp\AnnotationsSampleApp.csproj", "{11EEA268-0931-44B4-864C-D9BA03285D57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otc.Validations.Br.Tests", "Otc.Validations.Br.Tests\Otc.Validations.Br.Tests.csproj", "{314BAEB6-573D-46C9-A2EE-04D14A58211E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otc.Validation.Br.Tests", "Otc.Validation.Br.Tests\Otc.Validation.Br.Tests.csproj", "{314BAEB6-573D-46C9-A2EE-04D14A58211E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp", "SampleApp\SampleApp.csproj", "{21CDB0A6-60CB-4319-904C-AF27AFB23CFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{B31626F9-AD39-4700-8BEF-BED014D99587}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B31626F9-AD39-4700-8BEF-BED014D99587}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B31626F9-AD39-4700-8BEF-BED014D99587}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11EEA268-0931-44B4-864C-D9BA03285D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11EEA268-0931-44B4-864C-D9BA03285D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11EEA268-0931-44B4-864C-D9BA03285D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11EEA268-0931-44B4-864C-D9BA03285D57}.Release|Any CPU.Build.0 = Release|Any CPU
 		{314BAEB6-573D-46C9-A2EE-04D14A58211E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{314BAEB6-573D-46C9-A2EE-04D14A58211E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{314BAEB6-573D-46C9-A2EE-04D14A58211E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{314BAEB6-573D-46C9-A2EE-04D14A58211E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21CDB0A6-60CB-4319-904C-AF27AFB23CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CDB0A6-60CB-4319-904C-AF27AFB23CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CDB0A6-60CB-4319-904C-AF27AFB23CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CDB0A6-60CB-4319-904C-AF27AFB23CFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

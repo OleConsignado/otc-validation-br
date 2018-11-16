@@ -1,30 +1,15 @@
 ﻿using System;
 
-namespace Otc.Validation.Br.Library
+namespace Otc.Validations.Br
 {
-    public class CpfValidation
+    public static class CpfValidation
     {
-        public static bool IsValid(string value)
+        // referencia: http://www.macoratti.net/11/09/c_val1.htm
+        public static bool IsValid(string cpf)
         {
-            return IsValidCore(value);
-        }
-
-        public static bool IsValid(int value)
-        {
-            var iCpf = Convert.ToString(value);
-
-            return IsValidCore(iCpf);
-
-        }
-
-        private static bool IsValidCore(string value)
-        {
-            if (string.IsNullOrWhiteSpace(value))
+            if (string.IsNullOrWhiteSpace(cpf))
                 return false;
 
-            var iCpf = value;
-
-            string cpf = Convert.ToString(iCpf);
             cpf = cpf.PadLeft(11, '0');
             var retorno = true;
 
@@ -73,7 +58,6 @@ namespace Otc.Validation.Br.Library
             }
 
             return retorno;
-
         }
     }
 }
