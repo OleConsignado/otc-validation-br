@@ -1,20 +1,11 @@
 ﻿using System;
 
-namespace Otc.Validation.Br.Library
+namespace Otc.Validations.Br
 {
-    public class CnpjValidation
+    public static class CnpjValidation
     {
-        public static bool IsValid(string value)
-        {
-            return IsValidCore(value);
-        }
-
-        public static bool IsValid(int value)
-        {
-            return IsValidCore(Convert.ToString(value));
-        }
-
-        private static bool IsValidCore(string cnpj)
+        // referencia: http://www.macoratti.net/11/09/c_val1.htm
+        public static bool IsValid(string cnpj)
         {
             if (string.IsNullOrWhiteSpace(cnpj))
                 return false;

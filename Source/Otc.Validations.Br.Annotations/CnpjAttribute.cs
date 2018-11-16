@@ -1,6 +1,5 @@
 ﻿using Otc.ComponentModel.DataAnnotations;
-using Otc.Validation.Br.Library;
-using System;
+using Otc.Validations.Br;
 
 namespace Otc.Validations.Br.Annotations
 {
@@ -8,9 +7,7 @@ namespace Otc.Validations.Br.Annotations
     {
         public override bool IsValid(object value)
         {
-            bool result;
-            result = CnpjValidation.IsValid(value as string);
-            return result;
+            return CnpjValidation.IsValid(value?.ToString());
         }
     }
 }

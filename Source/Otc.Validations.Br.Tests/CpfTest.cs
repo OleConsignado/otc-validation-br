@@ -1,9 +1,7 @@
-using Otc.Validation.Br.Library;
-using System;
 using System.Collections.Generic;
 using Xunit;
 
-namespace Otc.Validation.Br.Tests
+namespace Otc.Validations.Br.Tests
 {
     public class CpfTest
     {
@@ -42,7 +40,7 @@ namespace Otc.Validation.Br.Tests
                 new object[] { "99999999" },
             };
 
-
+        // Casos de testes obtidos a partir de https://github.com/tallesl/net-Cpf/blob/master/Tests/CheckTests.cs 
         public static IEnumerable<object[]> DataValidos =>
             new List<object[]>
             {

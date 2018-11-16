@@ -1,10 +1,7 @@
-﻿using Otc.Validation.Br.Library;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Xunit;
 
-namespace Otc.Validation.Br.Tests
+namespace Otc.Validations.Br.Tests
 {
     public class CnpjTest
     {
