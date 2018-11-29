@@ -7,5 +7,9 @@ namespace AnnotationsSampleApp
     {
         [Cpf(ErrorKey = "CpfInvalido", ErrorMessage = "Cpf do Cliente inválido.")]
         public string Cpf { get; set; }
+
+
+        [Cpf(ErrorKey = "CpfInvalido", ErrorMessage = "Cpf do Cliente inválido.", IsRequired = false)]
+        public string CpfOptional { get; set; }
     }
 }

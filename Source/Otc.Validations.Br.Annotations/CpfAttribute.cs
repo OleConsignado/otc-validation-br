@@ -1,13 +1,19 @@
 ﻿using Otc.ComponentModel.DataAnnotations;
-using Otc.Validations.Br;
 
 namespace Otc.Validations.Br.Annotations
 {
     public class CpfAttribute : ValidationAttribute
     {
+        public bool IsRequired { get; set; } = true;
+
         public override bool IsValid(object value)
         {
-            return CpfValidation.IsValid(value?.ToString());
+            var cpf = value?.ToString();
+
+            if (string.IsNullOrEmpty(cpf) && !IsRequired)
+                return true;
+
+            return CpfValidation.IsValid(cpf);
         }
     }
 }
