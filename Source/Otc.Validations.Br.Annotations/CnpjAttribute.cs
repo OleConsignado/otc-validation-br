@@ -13,7 +13,7 @@ namespace Otc.Validations.Br.Annotations
             if (string.IsNullOrEmpty(cnpj) && !IsRequired)
                 return true;
 
-            return CnpjValidation.IsValid(value?.ToString());
+            return CnpjValidation.IsValid(cnpj);
         }
     }
 }
