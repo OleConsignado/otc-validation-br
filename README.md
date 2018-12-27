@@ -4,3 +4,5 @@
 Validações de documentos brasileiros.
 
 Veja exemplo: [Source/SampleApp/Model.cs](Source/SampleApp/Model.cs)
+
+Pacote NuGet: [Otc.Validations.Br](https://www.nuget.org/packages/Otc.Validations.Br)
