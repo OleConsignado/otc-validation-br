@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Ole Consignado</Authors>
     <Copyright>Ole Consignado (c) 2018</Copyright>
-    <VersionPrefix>1.0.1</VersionPrefix>
+    <VersionPrefix>1.0.2</VersionPrefix>
     <PackageProjectUrl>https://github.com/OleConsignado/otc-validations-br</PackageProjectUrl>    
   </PropertyGroup>
 
