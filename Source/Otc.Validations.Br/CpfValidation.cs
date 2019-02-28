@@ -28,7 +28,12 @@ namespace Otc.Validations.Br
             soma = 0;
 
             for (int i = 0; i < 9; i++)
-                soma += int.Parse(tempCpf[i].ToString()) * multiplicador1[i];
+            {
+                if (int.TryParse(tempCpf[i].ToString(), out int valor))
+                    soma += valor * multiplicador1[i];
+                else
+                    return false;
+            }
             resto = soma % 11;
             if (resto < 2)
                 resto = 0;
@@ -37,8 +42,14 @@ namespace Otc.Validations.Br
             digito = resto.ToString();
             tempCpf = tempCpf + digito;
             soma = 0;
+
             for (int i = 0; i < 10; i++)
-                soma += int.Parse(tempCpf[i].ToString()) * multiplicador2[i];
+            {
+                if (int.TryParse(tempCpf[i].ToString(), out int valor))
+                    soma += valor * multiplicador2[i];
+                else
+                    return false;
+            }
             resto = soma % 11;
             if (resto < 2)
                 resto = 0;

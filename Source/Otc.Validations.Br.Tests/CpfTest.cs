@@ -23,6 +23,7 @@ namespace Otc.Validations.Br.Tests
             new List<object[]>
             {
                 new object[] { null },
+                new object[] { "abc" },
                 new object[] { "" },
                 new object[] { " " },
                 new object[] { "\t" },
